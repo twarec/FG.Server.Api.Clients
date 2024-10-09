@@ -6,8 +6,8 @@ namespace FG.Server.Api.Clients.Main.Controllers;
 
 public interface IEventController
 {
-    [Post("")]
+    [Post("/Event/Geo/Markers/Distance/Range")]
     public Task<IEnumerable<Marker<EventMarkerValue>>> GetEventsFromDistanceAsync(GetEventsFromDistanceOptions options, [Body] GetEventsFromDistanceOptions.TagsFilter? tags);
-    [Post("")]
+    [Post("/Event/Geo/Markers/Distance/Range")]
     public Task<IEnumerable<Marker<EventMarkerValue>>> GetEventsFromBoundsAsync(GetEventsFromBoundsOptions options, [Body] GetEventsFromBoundsOptions.TagsFilter? tags);
 }
