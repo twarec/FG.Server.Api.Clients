@@ -1,6 +1,6 @@
 namespace FG.Server.Api.Clients.Main.Models.Responce.Map;
 
-public class EventMarkerValue
+public record class EventMarkerValue
 {
     public string EventId { get; set; } = string.Empty;
     public string Name { get; set; } = string.Empty;

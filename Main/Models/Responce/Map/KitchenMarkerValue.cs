@@ -1,6 +1,6 @@
 namespace FG.Server.Api.Clients.Main.Models.Responce.Map;
 
-public class KitchenMarkerValue
+public record class KitchenMarkerValue
 {
     public string KitchenId { get; set; } = string.Empty;
     public string Name { get; set; } = string.Empty;

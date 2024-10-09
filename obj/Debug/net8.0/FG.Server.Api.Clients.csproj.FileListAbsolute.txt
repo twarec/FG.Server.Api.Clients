@@ -1,0 +1,13 @@
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\bin\Debug\net8.0\FG.Server.Api.Clients.deps.json
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\bin\Debug\net8.0\FG.Server.Api.Clients.dll
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\bin\Debug\net8.0\FG.Server.Api.Clients.pdb
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.csproj.AssemblyReference.cache
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.AssemblyInfoInputs.cache
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.AssemblyInfo.cs
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.csproj.CoreCompileInputs.cache
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.sourcelink.json
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.dll
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\refint\FG.Server.Api.Clients.dll
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.pdb
+c:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\obj\Debug\net8.0\ref\FG.Server.Api.Clients.dll

@@ -1,7 +1,15 @@
+using System.Text.Json.Serialization;
+
 namespace FG.Server.Api.Clients.Main.Models.Responce.Map;
 
-public class Marker<T>(Location location, T value)
+public record class Marker<T>
 {
-    public Location Location => location;
-    public T Value => value;
+    public Location Location { get; set; }
+    public T Value { get; set; }
+
+    public Marker(Location location, T value)
+    {
+        Location = location;
+        Value = value;
+    }
 }

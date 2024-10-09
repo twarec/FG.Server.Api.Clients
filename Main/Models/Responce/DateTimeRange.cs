@@ -1,6 +1,6 @@
 namespace FG.Server.Api.Clients.Main.Models.Responce;
 
-public class DateTimeRange
+public record class DateTimeRange
 {
     public long Start { get; set; } = DateTime.Now.ToBinary();
     public long Stop { get; set; } = DateTime.Now.ToBinary();
