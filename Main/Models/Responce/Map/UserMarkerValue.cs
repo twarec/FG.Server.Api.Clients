@@ -1,5 +1,3 @@
-using System.Text.Json.Serialization;
-
 namespace FG.Server.Api.Clients.Main.Models.Responce.Map;
 
 public class UserMarkerValue

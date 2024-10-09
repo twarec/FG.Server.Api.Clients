@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4jkRaiQhWmmdtzxp0qS1FukovmKKTTyP2cQjTn6KNKeT4tjvC4xy+tHStDAN6MkJa65r9Hw5c2UMXdspGLh2Rg==",
+  "dgSpecHash": "8FLnY/fBiPq5zFRVLJ8L0EzElziuNT5LfBhBXwe/MMnx5bwwLQsUTsgTRyfLijF1LeZ2tTxHfFfalXOd0bsJDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Desktop\\Projects\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\refit\\7.2.1\\refit.7.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
