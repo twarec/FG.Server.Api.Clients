@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OnBoxIGXUJD9n3YlRIWQ48sP5s4RExp6qLu6BMvNHSgN6CbQup4xrBiIvL+WvCdU4mz5EcvFpFEzTerUBXnx8w==",
+  "dgSpecHash": "8FLnY/fBiPq5zFRVLJ8L0EzElziuNT5LfBhBXwe/MMnx5bwwLQsUTsgTRyfLijF1LeZ2tTxHfFfalXOd0bsJDw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Admin\\Desktop\\Projects\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Projects\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\refit\\7.2.1\\refit.7.2.1.nupkg.sha512"
   ],
