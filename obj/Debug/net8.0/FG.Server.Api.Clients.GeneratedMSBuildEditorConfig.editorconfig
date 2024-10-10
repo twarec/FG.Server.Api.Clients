@@ -9,6 +9,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FG.Server.Api.Clients
-build_property.ProjectDir = C:\Users\Admin\Desktop\Projects\FG.Server.Api.Clients\
+build_property.ProjectDir = C:\Users\Twarec\source\repos\ConsoleApp15\FG.Server.Api.Clients\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

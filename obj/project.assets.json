@@ -56,23 +56,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Twarec\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Projects\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
+      "projectUniqueName": "C:\\Users\\Twarec\\source\\repos\\ConsoleApp15\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
       "projectName": "FG.Server.Api.Clients",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Projects\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Projects\\FG.Server.Api.Clients\\obj\\",
+      "projectPath": "C:\\Users\\Twarec\\source\\repos\\ConsoleApp15\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
+      "packagesPath": "C:\\Users\\Twarec\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Twarec\\source\\repos\\ConsoleApp15\\FG.Server.Api.Clients\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Twarec\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -126,7 +126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
