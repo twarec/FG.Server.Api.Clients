@@ -24,3 +24,16 @@ C:\Users\Twarec\source\repos\ConsoleApp15\FG.Server.Api.Clients\obj\Debug\net8.0
 C:\Users\Twarec\source\repos\ConsoleApp15\FG.Server.Api.Clients\obj\Debug\net8.0\refint\FG.Server.Api.Clients.dll
 C:\Users\Twarec\source\repos\ConsoleApp15\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.pdb
 C:\Users\Twarec\source\repos\ConsoleApp15\FG.Server.Api.Clients\obj\Debug\net8.0\ref\FG.Server.Api.Clients.dll
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\bin\Debug\net8.0\FG.Server.Api.Clients.deps.json
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\bin\Debug\net8.0\FG.Server.Api.Clients.dll
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\bin\Debug\net8.0\FG.Server.Api.Clients.pdb
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.csproj.AssemblyReference.cache
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.AssemblyInfoInputs.cache
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.AssemblyInfo.cs
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.csproj.CoreCompileInputs.cache
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.sourcelink.json
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.dll
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\refint\FG.Server.Api.Clients.dll
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\FG.Server.Api.Clients.pdb
+c:\Users\Twarec\Desktop\projects\FG.Server.Admin\FG.Server.Api.Clients\obj\Debug\net8.0\ref\FG.Server.Api.Clients.dll

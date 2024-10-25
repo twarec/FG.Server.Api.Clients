@@ -62,11 +62,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Twarec\\source\\repos\\ConsoleApp15\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
+      "projectUniqueName": "C:\\Users\\Twarec\\Desktop\\projects\\FG.Server.Admin\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
       "projectName": "FG.Server.Api.Clients",
-      "projectPath": "C:\\Users\\Twarec\\source\\repos\\ConsoleApp15\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
+      "projectPath": "C:\\Users\\Twarec\\Desktop\\projects\\FG.Server.Admin\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
       "packagesPath": "C:\\Users\\Twarec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Twarec\\source\\repos\\ConsoleApp15\\FG.Server.Api.Clients\\obj\\",
+      "outputPath": "C:\\Users\\Twarec\\Desktop\\projects\\FG.Server.Admin\\FG.Server.Api.Clients\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -121,12 +121,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.4, 8.0.4]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.4, 8.0.4]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.4, 8.0.4]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.4.24267.66/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
