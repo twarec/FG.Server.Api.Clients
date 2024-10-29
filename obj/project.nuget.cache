@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LrF+4+4sb5I=",
+  "dgSpecHash": "t1pDSfZc6uc=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Twarec\\Desktop\\projects\\FG.Server.Admin\\FG.Server.Api.Clients\\FG.Server.Api.Clients.csproj",
+  "projectFilePath": "/workspaces/FG.Server.Api.Clients/FG.Server.Api.Clients.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Twarec\\.nuget\\packages\\refit\\7.2.1\\refit.7.2.1.nupkg.sha512",
-    "C:\\Users\\Twarec\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.4\\microsoft.netcore.app.ref.8.0.4.nupkg.sha512",
-    "C:\\Users\\Twarec\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.4\\microsoft.windowsdesktop.app.ref.8.0.4.nupkg.sha512",
-    "C:\\Users\\Twarec\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.4\\microsoft.aspnetcore.app.ref.8.0.4.nupkg.sha512"
+    "/home/codespace/.nuget/packages/refit/7.2.1/refit.7.2.1.nupkg.sha512"
   ],
   "logs": []
 }
