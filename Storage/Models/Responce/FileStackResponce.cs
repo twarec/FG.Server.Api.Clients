@@ -4,8 +4,8 @@ public record class FileStackResponce
 {
     public Guid Id { get; set; }
     public long Lenght { get; set; }
-    public DateTime DateCreate { get; set; } = DateTime.UtcNow;
-    public DateTime DateUpdate { get; set; } = DateTime.UtcNow;
+    public long DateCreate { get; set; } = DateTime.UtcNow.ToBinary();
+    public long DateUpdate { get; set; } = DateTime.UtcNow.ToBinary();
 
     public Dictionary<string, FileResponce> Files { get; set; } = [];
     public Dictionary<string, string> Metadata { get; set; } = [];

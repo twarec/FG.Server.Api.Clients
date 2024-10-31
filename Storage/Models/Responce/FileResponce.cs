@@ -7,8 +7,8 @@ public record class FileResponce
     public Guid GroupId { get; set; }
     public Guid InformId { get; set; }
 
-    public DateTime DateCreate { get; set; } = DateTime.UtcNow;
-    public DateTime DateUpdate { get; set; } = DateTime.UtcNow;
+    public long DateCreate { get; set; } = DateTime.UtcNow.ToBinary();
+    public long DateUpdate { get; set; } = DateTime.UtcNow.ToBinary();
 
     public string Link { get; set; } = string.Empty;
 

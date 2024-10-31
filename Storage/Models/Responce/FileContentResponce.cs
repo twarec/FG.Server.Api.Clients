@@ -4,6 +4,6 @@ public class FileContentResponce
 {
     public Guid Id { get; set; }
     public string Data { get; set; } = string.Empty;
-    public DateTime DateCreate { get; set; } = DateTime.UtcNow;
-    public DateTime DateUpdate { get; set; } = DateTime.UtcNow;
+    public long DateCreate { get; set; } = DateTime.UtcNow.ToBinary();
+    public long DateUpdate { get; set; } = DateTime.UtcNow.ToBinary();
 }
