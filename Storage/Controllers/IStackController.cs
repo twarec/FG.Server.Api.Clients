@@ -7,11 +7,13 @@ namespace FG.Server.Api.Clients.Storage.Controllers;
 public interface IStackController
 {
     [Post("/Stack/Image")]
-    public Task<FileStackResponce> GenerateImages([Body] PostImageStackOptions options);
+    public Task<FileStackResponce> GenerateImagesAsync([Body] PostImageStackOptions options);
     [Delete("/Stack/{id}")]
     public Task<bool> DeleteStackAsync(Guid id, [Query] bool isDeletaFiles = false);
     [Post("/Stack")]
     public Task<FileStackResponce> AddStackAsync([Body] PostFileStackOptions oprions);
+    [Post("/Stack/{id}/Add")]
+    public Task<FileResponce> AddFileToStackAsync(Guid id, [Body] PostFileOptions oprions);
     [Get("/Stack/{id}")]
     public Task<FileStackResponce> GetStackAsync(Guid id);
     [Get("/Stack/{id}/{key}/Expanded")]

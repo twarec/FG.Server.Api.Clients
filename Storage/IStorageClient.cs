@@ -9,5 +9,6 @@ public interface IStorageClient
     public IFileController FileController { get; }
     public IGroupController GroupController { get; }
     public IStackController StackController { get; }
+    public IConfigurateController ConfigurateController { get; }
 
 }
