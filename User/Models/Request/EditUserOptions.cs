@@ -1,5 +1,3 @@
-using System;
-
 namespace FG.Server.Api.Clients.User.Models.Request;
 
 public class EditUserOptions

@@ -1,4 +1,3 @@
-using System;
 using Refit;
 
 namespace FG.Server.Api.Clients.User.Models.Request;

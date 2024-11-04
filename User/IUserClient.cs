@@ -1,4 +1,3 @@
-using FG.Server.Api.Clients.Admin.Controllers;
 using FG.Server.Api.Clients.User.Controllers;
 
 namespace FG.Server.Api.Clients.User;
