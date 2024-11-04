@@ -12,9 +12,7 @@ public interface IConfigurateController
     public Task<string> GetContentAsync(string name);
     [Get("/Configurate/Range")]
     public Task<IEnumerable<ConfigurateResponce>> GetRangeAsync([Query] int offset, [Query] int count);
-    [Post("/Configurate")]
-    public Task<ConfigurateResponce> CreateAsync([Body] PostConfigurateOptions options);
     [Put("/Configurate")]
-    public Task<ConfigurateResponce> EditAsync([Body] PostConfigurateOptions options);
+    public Task<ConfigurateResponce> CreateOrEditAsync([Body] PostConfigurateOptions options);
 
 }

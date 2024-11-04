@@ -11,8 +11,8 @@ public record class FileResponce
     public long DateUpdate { get; set; } = DateTime.UtcNow.ToBinary();
 
     public string Link { get; set; } = string.Empty;
+    public string Group { get; set; } = string.Empty;
 
-    public FileGroupResponce? Group { get; set; }
     public FileInfromResponce? Inform { get; set; }
     public FileContentResponce? Content { get; set; }
     public FileStructureResponce? Structure { get; set; }
