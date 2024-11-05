@@ -1,10 +1,10 @@
-﻿namespace FG.Server.Api.Clients.User.Models.Responce
+﻿namespace FG.Server.Api.Clients.User.Models.Request
 {
-	public class SetUserPropertyOptions
-	{
-		public Guid UserId { get; set; }
-		public string StackName { get; set; } = string.Empty;
-		public string Description { get; set; } = string.Empty;
-		public Dictionary<string, string?> Proprties { get; set; } = [];
-	}
+    public class SetUserPropertyOptions
+    {
+        public Guid UserId { get; set; }
+        public string StackName { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public Dictionary<string, string?> Proprties { get; set; } = [];
+    }
 }

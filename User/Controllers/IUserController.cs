@@ -1,5 +1,4 @@
 using FG.Server.Api.Clients.User.Models.Request;
-using FG.Server.Api.Clients.User.Models.Responce;
 using FG.Server.Api.Clients.User.Models.Responce.User;
 using Refit;
 using System.Diagnostics.Contracts;
@@ -60,7 +59,7 @@ public interface IUserController
     [Delete("/User/Properties")]
     public Task<UserStackPropertyResponce> RemoveProperties(
         [Body] UserPropertyOptions options);
-
+    
     [Delete("/User/Properties/Stack")]
     public Task RemoveStackProperties(
         [Query] Guid userId,
