@@ -19,7 +19,7 @@ namespace FG.Server.Api.Clients.Admin.Controllers
         public Task<int> GetResponceManyCountAsync(int[] ids);
 
         [Get("/api/Moderation/{grouped}/Range")]
-        public Task<List<ModerationResponce>> GetRangeAsync([Query]int offset, [Query]int count, string grouped);
+        public Task<List<ModerationResponce>> GetRangeAsync([Query] int offset, [Query] int count, string grouped);
 
         [Get("/api/Moderation/{grouped}/Range/Count")]
         public Task<int> GetCountAsync(string grouped);
@@ -35,5 +35,8 @@ namespace FG.Server.Api.Clients.Admin.Controllers
 
         [Post("/api/Moderation/Responce")]
         public Task<ModerationResponce> AddResponceAsync([Body] ModerationResponceOptions options);
+
+        [Post("/api/Moderation/{id}/Blocked/Time")]
+        public Task<ModerationResponce> BlockForTimeAsync(int id, [Query] long seconds);
     }
 }
