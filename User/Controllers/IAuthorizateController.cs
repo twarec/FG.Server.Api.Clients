@@ -1,5 +1,5 @@
 using FG.Server.Api.Clients.User.Models.Request;
-using FG.Server.Api.Clients.User.Models.Responce;
+using FG.Server.Api.Clients.User.Models.Responce.Authorization;
 using Refit;
 
 namespace FG.Server.Api.Clients.User.Controllers;

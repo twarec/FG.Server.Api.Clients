@@ -1,4 +1,4 @@
-namespace FG.Server.Api.Clients.User.Models.Responce;
+namespace FG.Server.Api.Clients.User.Models.Responce.User;
 
 public class AddAppleAuthorizationResponce : AddAuthorizationResponce
 {
