@@ -18,8 +18,14 @@ namespace FG.Server.Api.Clients.Admin.Controllers
         [Get("/api/ModerationUser/Range/Count")]
         public Task<int> GetCountAsync();
 
+        [Get("/api/ModerationUser/Many")]
+        public Task<List<ModerationUserResponce>> GetManytAsync([Query(CollectionFormat.Multi)]long[] users);
+
         [Put("/api/ModerationUser/{options.UserId}/Position")]
         public Task<string> UpdatePositionAsync(ModerationUserPositionOptions options);
+
+        [Put("/api/ModerationUser/{id}/Banned")]
+        public Task BanUserAsync(long id);
 
         [Post("/api/ModerationUser/{userId}/Change/Color")]
         public Task<ModerationUserResponce> ChangeColorAsync(long userId, [Query]string color);
