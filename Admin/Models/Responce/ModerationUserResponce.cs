@@ -6,5 +6,6 @@
         public DateTime DateCreate { get; set; }
         public string Description { get; set; } = string.Empty;
         public string Color { get; set; } = string.Empty;
+        public bool IsBanned { get; set; }
     }
 }
