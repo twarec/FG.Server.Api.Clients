@@ -8,12 +8,12 @@ namespace FG.Server.Api.Clients.User.Controllers
 		[Get("/User/Analytics/Tags")]
 		public Task<Dictionary<string, string?>> GetTags(
 			[Query] Guid userId,
-			[Query] List<string>? tagsKey);
+			[Query] List<string> tagsKey);
 
 		[Post("/User/Analytics/Tags")]
 		public Task<Dictionary<string, string?>> SetTags(
 			[Query] Guid userId,
-			[Query] Dictionary<string, string?> tags);
+			[Body] Dictionary<string, string?> tags);
 
 		[Delete("/User/Analytics/Tags")]
 		public Task DeleteTags(
@@ -23,5 +23,26 @@ namespace FG.Server.Api.Clients.User.Controllers
 		[Delete("/User/Analytics/Tags/All")]
 		public Task DeleteAllTags(
 			[Query] Guid userId);
+
+
+		[Get("/User/Analytics/Roles")]
+		public Task<List<string>> GetRoles(
+			[Query] Guid userId);
+
+		[Post("/User/Analytics/Roles")]
+		public Task<List<string>> SetRoles(
+			[Query] Guid userId,
+			[Body] List<string> roles);
+
+		[Delete("/User/Analytics/Roles")]
+		public Task DeleteRoles(
+			[Query] Guid userId,
+			[Body] List<string> roles);
+
+		[Delete("/User/Analytics/Roles/All")]
+		public Task DeleteAllRoles(
+			[Query] Guid userId);
+
+
 	}
 }
