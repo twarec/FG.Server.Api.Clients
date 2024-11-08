@@ -4,6 +4,26 @@ namespace FG.Server.Api.Clients.User.Controllers
 {
 	public interface IAnalyticsController
     {
+		[Get("/User/Analytics/User/Check")]
+		public Task<bool> CheckAvalaibleUser(
+			[Query] Guid userId);
+
+		//return list avalaible users
+		[Get("/User/Analytics/User/Many/Check")]
+		public Task<List<Guid>> CheckAvalaibleManyUsers(
+			[Query] List<Guid> usersId);
+
+		[Get("/User/Analytics/User/Check/Email")]
+		public Task<bool> CheckAvalaibleUserFromEmail(
+			[Query] string email);
+
+		//return list avalaible users
+		[Get("/User/Analytics/User/Many/Check/Email")]
+		public Task<List<string>> CheckAvalaibleManyUsersFromEmail(
+			[Query] List<string> emails);
+
+		
+
 		//if list empty return all
 		[Get("/User/Analytics/Tags")]
 		public Task<Dictionary<string, string?>> GetTags(
