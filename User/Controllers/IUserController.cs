@@ -1,7 +1,6 @@
 using FG.Server.Api.Clients.User.Models.Request;
 using FG.Server.Api.Clients.User.Models.Responce.User;
 using Refit;
-using System.Diagnostics.Contracts;
 
 namespace FG.Server.Api.Clients.User.Controllers;
 
@@ -65,11 +64,16 @@ public interface IUserController
         [Query] Guid userId,
         [Query] string stackName);
 
-	//[Get("/Connect/AuthMethod/Google")]
-	//public Task<AddGoogleAuthorizationResponce> AddGoogle(
-	//    [Query] Guid userId);
+    [Get("/User/Images/Avatar")]
+    public Task GetAvatar(
+        [Query] Guid userId,
+        [Query] string sizeFormat);
 
-	//[Get("/Connect/AuthMethod/Apple")]
-	//public Task<AddAppleAuthorizationResponce> AddApple(
-	//    [Query] Guid userId);
+    [Post("/User/Images/Avatar")]
+    public Task<Guid> SetAvatar(
+        [Body] SetAvatarOptions options);
+
+    [Delete("/User/Images/Avatar")]
+    public Task<bool> DeleteAvatar(
+        [Query] Guid userId);
 }
