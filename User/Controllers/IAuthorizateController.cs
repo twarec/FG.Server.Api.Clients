@@ -15,7 +15,7 @@ public interface IAuthorizateController
         [Query] string email);
 
     [Put("/User/Authorizate/Email/Verification")]
-    public Task Verification(
+    public Task<AuthorizateEmailResponce> Verification(
         [Query] string email, 
         [Query] string code);
 

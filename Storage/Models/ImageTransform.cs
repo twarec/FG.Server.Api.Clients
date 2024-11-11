@@ -2,10 +2,10 @@ namespace FG.Server.Api.Clients.Storage.Models;
 
 public class ImageTransform
 {
-    public int? Quality { get; set; }
-    public SizeOptions? Size { get; set; }
-    public MaxSizeOptions? MaxSize { get; set; }
-    public BoxSizeOptions? BoxSize { get; set; }
+    public int? Quality { get; set; } //Масштабирование от 0 до 100
+    public SizeOptions? Size { get; set; }  //По одному значению
+    public MaxSizeOptions? MaxSize { get; set; } //Пропорции по макс координате
+    public BoxSizeOptions? BoxSize { get; set; } //С подгонкой xy
 
     public class SizeOptions
     {
