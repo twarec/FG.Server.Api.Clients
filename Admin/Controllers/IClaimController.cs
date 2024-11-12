@@ -9,6 +9,9 @@ namespace FG.Server.Api.Clients.Admin.Controllers
         [Get("/api/Claim/{grouped}/Range")]
         public Task<List<ClaimResponce>> GetRangeAsync([Query] int offset, [Query] int count, string grouped);
 
+        [Get("/api/Claim/Many")]
+        public Task<List<ClaimResponce>> GetManyAsync(int[] ids);
+
         [Get("/api/Claim/{grouped}/Next")]
         public Task<ClaimResponce> GetNextAsync(string grouped);
 
