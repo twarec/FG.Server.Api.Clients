@@ -12,7 +12,7 @@ namespace FG.Server.Api.Clients.Admin.Controllers
         [Get("/api/Moderation/Range/Many/Count")]
         public Task<int> GetManyCountAsync(int[] ids);
 
-        [Get("/api/Moderation/Responce/Range/Many")]
+        [Get("/api/Moderation/Range/Many")]
         public Task<List<ModerationResultResponce>> GetResponceManyAsync(int[] ids);
 
         [Get("/api/Moderation/Responce/Range/Many/Count")]
