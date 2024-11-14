@@ -6,6 +6,7 @@ public interface IUserClient
 {
     public Uri? Url { get; }
 
+    public Controllers.IHEUserController HEUserContoller { get; }
     public Controllers.IUserController UserController { get; }
     public IAnalyticsController AnalyticsController { get; }
     public IAuthorizateController AuthorizateController { get; }

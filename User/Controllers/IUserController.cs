@@ -75,7 +75,7 @@ public interface IUserController
 
     [Get("/User/Images/Avatar")]
     public Task GetAvatar(
-        [Query] Guid userId,
+        [Query] Guid avatarId,
         [Query] string sizeFormat);
 
     [Post("/User/Images/Avatar")]
