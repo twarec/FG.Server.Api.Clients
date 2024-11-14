@@ -22,10 +22,10 @@ namespace FG.Server.Api.Clients.Admin.Controllers
         [Get("/api/User/{userId}/Connection/Range/Count")]
         public Task<int> GetConnectionsCountAsync([Query] int offset, [Query] int count, int userId);
 
-        [Get("/api/User/{userId}/Moderatoin/Range")]
+        [Get("/api/User/{userId}/Moderation/Range")]
         public Task<List<ModerationResponce>> GetModerationsAsync(int userId, [Query] int offset, [Query] int count);
 
-        [Get("/api/User/{userId}/Moderatoin/Range/Count")]
+        [Get("/api/User/{userId}/Moderation/Range/Count")]
         public Task<int> GetModerationsCountAsync(int userId);
 
         [Get("/api/User/{userId}/Claim/Range")]
@@ -41,15 +41,18 @@ namespace FG.Server.Api.Clients.Admin.Controllers
         public Task<int> GetAllCountAsync();
 
         [Put("/api/User/{userId}/Status")]
-        public Task UpdateStatus(int userId, [Query] UserStatus status);
+        public Task UpdateStatusAsync(int userId, [Query] UserStatus status);
 
         [Post("/api/User/Avatar")]
-        public Task SetAvatar(UserAvatarOptions options);
+        public Task SetAvatarAsync(UserAvatarOptions options);
+
+        [Post("/api/User/Avatar/{options.Id}")]
+        public Task SetAvatarAsAdminAsync(UserAvatarAsAdminOptions options);
 
         [Post("/api/User")]
-        public Task<UserResponce> UpdateUserData(UpdateUserDataOptions options);
+        public Task<UserResponce> UpdateUserDataAsync(UpdateUserDataOptions options);
 
         [Post("/api/User/{options.UserId}")]
-        public Task<UserResponce> UpdateUserDataAsAdmin(UpdateUserDataAsAdminOptions options);
+        public Task<UserResponce> UpdateUserDataAsAdminAsync(UpdateUserDataAsAdminOptions options);
     }
 }
