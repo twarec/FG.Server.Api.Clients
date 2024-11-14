@@ -1,4 +1,4 @@
-﻿namespace FG.Server.Api.Clients.User.Models.Request
+﻿namespace FG.Server.Api.Clients.User.Models.Request.User
 {
     public class SetUserPropertyOptions
     {

@@ -1,6 +1,8 @@
-using FG.Server.Api.Clients.User.Models.Request;
+using FG.Server.Api.Clients.User.Models.Request.Authorization;
+using FG.Server.Api.Clients.User.Models.Request.User;
 using FG.Server.Api.Clients.User.Models.Responce.User;
 using Refit;
+using System.Diagnostics.Contracts;
 
 namespace FG.Server.Api.Clients.User.Controllers;
 
@@ -8,21 +10,28 @@ public interface IUserController
 {
     [Get("/User")]
     public Task<UserResponce> GetUser(
-        [Query] Guid userId);
+        [Query] Guid userId,
+		[Query] List<string> additionalModels);
 
     [Get("/User/Many")]
     public Task<List<UserResponce>?> GetManyUsers(
-        [Query(CollectionFormat = CollectionFormat.Multi)] List<Guid> usersId);
+        [Query(CollectionFormat = CollectionFormat.Multi)] List<Guid> usersId,
+		[Query(CollectionFormat = CollectionFormat.Multi)] List<string> additionalModels);
 
     [Put("/User")]
     public Task<UserResponce> EditUser(
         [Query] Guid userId, 
         [Body] EditUserOptions options);
 
+
     [Get("/User/Connect/AuthMethod/Email")]
     public Task<AddEmailAuthorizationResponce> AddEmail(
         [Query] Guid userId, 
         [Body] AuthorizationEmailOptions options);
+
+    [Put("/User/Password")]
+    public Task EditPassword(
+        [Body] EditUserPasswordOptions options);
 
     [Put("/User/Password/Recovery")]
     public Task RecoveryPassword(
@@ -72,6 +81,12 @@ public interface IUserController
     [Post("/User/Images/Avatar")]
     public Task<Guid> SetAvatar(
         [Body] SetAvatarOptions options);
+
+    [Multipart]
+    [Post("/User/Images/Avatar/Form")]
+    public Task<Guid> SetAvatarFromForm(
+        [Query] Guid userId,
+        [AliasAs("avatar")] StreamPart stream);
 
     [Delete("/User/Images/Avatar")]
     public Task<bool> DeleteAvatar(

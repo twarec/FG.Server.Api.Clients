@@ -1,6 +1,6 @@
 using Refit;
 
-namespace FG.Server.Api.Clients.User.Models.Request;
+namespace FG.Server.Api.Clients.User.Models.Request.Authorization;
 
 public class AuthorizationEmailOptions : AuthorizationOptions
 {

@@ -1,4 +1,4 @@
-using FG.Server.Api.Clients.User.Models.Request;
+using FG.Server.Api.Clients.User.Models.Request.Authorization;
 using FG.Server.Api.Clients.User.Models.Responce.Authorization;
 using Refit;
 
@@ -6,6 +6,11 @@ namespace FG.Server.Api.Clients.User.Controllers;
 
 public interface IAuthorizateController
 {
+    [Get("/User/Authorizate/Session")]
+    public Task<AuthorizateResponce> AuthorizateFromSession(
+        [Query] Guid userId,
+        [Query] Guid sessionId);
+
     [Get("/User/Authorizate/Email")]
     public Task<AuthorizateEmailResponce> AutorizateFromEmail(
         [Query] AuthorizationEmailOptions options);
