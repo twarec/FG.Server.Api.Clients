@@ -9,34 +9,35 @@ namespace FG.Server.Api.Clients.User.Controllers
 	{
 		[Put("/HE/User")]
 		public Task<HEUserResponce> EditUser(
-			[Query] Guid userId,
 			[Body] EditHEUserOptions options);
 
 		[Get("/HE/User/Position")]
+		public Task<PositionModel> GetPosition();
+		
+		[Get("/HE/User/Position/{userId}")]
 		public Task<PositionModel> GetPosition(
-			[Query] Guid userId);
+			Guid userId);
 
 		[Post("/HE/User/Position")]
 		public Task SetPosition(
-			[Query] Guid userId,
 			[Body] PositionModel options);
 
 		[Get("/HE/User/Tags")]
+		public Task<List<string>> GetTags();
+		
+		[Get("/HE/User/Tags/{userId}")]
 		public Task<List<string>> GetTags(
-			[Query] Guid userId);
+			Guid userId);
 
 		[Post("/HE/User/Tags")]
 		public Task<List<string>> SetTags(
-			[Query] Guid userId,
 			[Body] List<string> tags);
 
 		[Delete("/HE/User/Tags")]
 		public Task<List<string>> DeleteTags(
-			[Query] Guid userId,
 			[Body] List<string> deletingTags);
 
 		[Delete("/HE/User/Tags/All")]
-		public Task DeleteAllTags(
-			[Query] Guid userId);
+		public Task DeleteAllTags();
 	}
 }

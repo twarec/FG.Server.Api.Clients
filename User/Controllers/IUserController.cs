@@ -10,17 +10,30 @@ public interface IUserController
 {
     [Get("/User")]
     public Task<UserResponce> GetUser(
+		[Query] List<string> additionalModels);
+    
+    [Get("/User/Id/{userId}")]
+    public Task<UserResponce> GetUserFromId(
         [Query] Guid userId,
 		[Query] List<string> additionalModels);
+    
+    [Get("/User/Email/{email}")]
+    public Task<UserResponce> GetUserFromEmail(
+        [Query] string email,
+		[Query] List<string> additionalModels);
 
-    [Get("/User/Many")]
+    [Get("/User/Many/Id")]
     public Task<List<UserResponce>?> GetManyUsers(
         [Query(CollectionFormat = CollectionFormat.Multi)] List<Guid> usersId,
 		[Query(CollectionFormat = CollectionFormat.Multi)] List<string> additionalModels);
 
-    [Put("/User")]
+	[Get("/User/Many/Email")]
+	public Task<List<UserResponce>?> GetManyUsers(
+		[Query(CollectionFormat = CollectionFormat.Multi)] List<string> emails,
+		[Query(CollectionFormat = CollectionFormat.Multi)] List<string> additionalModels);
+
+	[Put("/User")]
     public Task<UserResponce> EditUser(
-        [Query] Guid userId, 
         [Body] EditUserOptions options);
 
 
@@ -45,23 +58,38 @@ public interface IUserController
 
     [Get("/User/Properties")]
     public Task<UserPropertyResponce> GetProperties(
-        UserPropertyOptions options);
+        [Body]UserPropertyOptions options);
+
+    [Get("/User/Properties/{userId}")]
+    public Task<UserPropertyResponce> GetPropeties(
+        Guid userId,
+        [Body]UserPropertyOptions options);
 
     [Get("/User/Properties/Stacks")]
+    public Task<UserStackPropertyResponce> GetAllUserStacksProperties();
+    
+    [Get("/User/Properties/Stacks{userId}")]
     public Task<UserStackPropertyResponce> GetAllUserStacksProperties(
-        [Query] Guid userId);
+        Guid userId);
 
     [Post("/User/Properties")]
     public Task<UserStackPropertyResponce> SetProperties(
         [Body] SetUserPropertyOptions options);
 
     [Get("/User/Properties/Stacks/Names")]
+    public Task<List<string>> GetUserNamesStacks();
+    
+    [Get("/User/Properties/Stacks/Names/{userId}")]
     public Task<List<string>> GetUserNamesStacks(
-        [Query] Guid userId);
+        Guid userId);
 
     [Get("/User/Properties/Stacks/Stack")]
     public Task<UserStackPropertyResponce> GetUserStackProperties(
-        [Query] Guid userId,
+        [Query] string stackName);
+    
+    [Get("/User/Properties/Stacks/Stack/{userId}")]
+    public Task<UserStackPropertyResponce> GetUserStackProperties(
+        Guid userId,
         [Query] string stackName);
 
     [Delete("/User/Properties")]
@@ -70,12 +98,15 @@ public interface IUserController
     
     [Delete("/User/Properties/Stack")]
     public Task RemoveStackProperties(
-        [Query] Guid userId,
         [Query] string stackName);
 
     [Get("/User/Images/Avatar")]
     public Task GetAvatar(
-        [Query] Guid avatarId,
+        [Query] string sizeFormat);
+    
+    [Get("/User/Images/Avatar/{userId}")]
+    public Task GetAvatar(
+        Guid avatarId,
         [Query] string sizeFormat);
 
     [Post("/User/Images/Avatar")]
@@ -85,14 +116,11 @@ public interface IUserController
     [Multipart]
     [Post("/User/Images/Avatar/Form")]
     public Task<Guid> SetAvatarFromForm(
-        [Query] Guid userId,
         [AliasAs("avatar")] StreamPart stream);
 
     [Delete("/User/Images/Avatar")]
-    public Task<bool> DeleteAvatar(
-        [Query] Guid userId);
+    public Task<bool> DeleteAvatar();
 
     [Delete("/User")]
-    public Task Delete(
-        [Query] Guid userId);
+    public Task Delete();
 }
