@@ -92,11 +92,7 @@ public interface IUserController
     public Task<bool> DeleteAvatar(
         [Query] Guid userId);
 
-    [Delete("/User/Images")]
+    [Delete("/User")]
     public Task Delete(
         [Query] Guid userId);
-
-    [Delete("/User/Images")]
-    public Task Delete(
-        [Body] List<Guid> usersId);
 }
