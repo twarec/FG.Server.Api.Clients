@@ -14,12 +14,12 @@ public interface IUserController
     
     [Get("/User/Id/{userId}")]
     public Task<UserResponce> GetUserFromId(
-        [Query] Guid userId,
+        Guid userId,
 		[Query] List<string> additionalModels);
     
     [Get("/User/Email/{email}")]
     public Task<UserResponce> GetUserFromEmail(
-        [Query] string email,
+        string email,
 		[Query] List<string> additionalModels);
 
     [Get("/User/Many/Id")]
@@ -39,7 +39,6 @@ public interface IUserController
 
     [Get("/User/Connect/AuthMethod/Email")]
     public Task<AddEmailAuthorizationResponce> AddEmail(
-        [Query] Guid userId, 
         [Body] AuthorizationEmailOptions options);
 
     [Put("/User/Password")]
@@ -104,7 +103,7 @@ public interface IUserController
     public Task GetAvatar(
         [Query] string sizeFormat);
     
-    [Get("/User/Images/Avatar/{userId}")]
+    [Get("/User/Images/Avatar/{avatarId}")]
     public Task GetAvatar(
         Guid avatarId,
         [Query] string sizeFormat);
