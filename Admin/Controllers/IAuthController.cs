@@ -13,6 +13,6 @@ namespace FG.Server.Api.Clients.Admin.Controllers
         public Task<UserAuthorizateResponce> AuthorizationAsync([Body] AuthotizationOptions options);
 
         [Post("/api/Auth/Authorization/Session")]
-        public Task<UserAuthorizateResponce> AuthorizationSessionAsync([Body]int sessionId);
+        public Task<UserAuthorizateResponce> AuthorizationSessionAsync([Body] int sessionId);
     }
 }
