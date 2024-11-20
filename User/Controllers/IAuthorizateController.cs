@@ -21,7 +21,7 @@ public interface IAuthorizateController
 
     [Put("/User/Authorizate/Email/Verification")]
     public Task<AuthorizateEmailResponce> Verification(
-        [Query] string email, 
+        [Query] string email,
         [Query] string code);
 
     //[Get("/User/Authorizate/Google")]
