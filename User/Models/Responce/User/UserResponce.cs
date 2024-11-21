@@ -7,6 +7,7 @@ public class UserResponce
 
 	public bool VerifiedEmail { get; set; } = false;
 	public long DateBirth { get; set; } = DateTime.UtcNow.ToBinary();
+	public string Language { get; set; } = string.Empty;
 	public string DisplayName { get; set; } = string.Empty;
 	public string Email { get; set; } = string.Empty;
 	public string PhoneNumber { get; set; } = string.Empty;
