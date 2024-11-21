@@ -5,9 +5,9 @@ namespace FG.Server.Api.Clients.Storage.Controllers;
 
 public interface IGroupController
 {
-    [Get("/Group/{group}/Range/{offset}/{count}")]
-    public Task<IEnumerable<FileResponce>> GeRangeAsync(string group, int offset, int count);
+	[Get("/Group/{group}/Range/{offset}/{count}")]
+	public Task<IEnumerable<FileResponce>> GeRangeAsync(string group, int offset, int count);
 
-    [Delete("/Group/{group}")]
-    public Task<bool> DeleteAsync(string group);
+	[Delete("/Group/{group}")]
+	public Task<bool> DeleteAsync(string group);
 }

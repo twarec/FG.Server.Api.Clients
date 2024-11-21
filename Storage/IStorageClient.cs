@@ -4,11 +4,11 @@ namespace FG.Server.Api.Clients.Storage;
 
 public interface IStorageClient
 {
-    public Uri? Url { get; }
+	public Uri? Url { get; }
 
-    public IFileController FileController { get; }
-    public IGroupController GroupController { get; }
-    public IStackController StackController { get; }
-    public IConfigurateController ConfigurateController { get; }
+	public IFileController FileController { get; }
+	public IGroupController GroupController { get; }
+	public IStackController StackController { get; }
+	public IConfigurateController ConfigurateController { get; }
 
 }

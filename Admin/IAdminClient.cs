@@ -2,8 +2,8 @@
 
 namespace FG.Server.Api.Clients.Admin
 {
-    public interface IAdminClient
-    {
-        public IAuthController AuthController { get; }
-    }
+	public interface IAdminClient
+	{
+		public IAuthController AuthController { get; }
+	}
 }
