@@ -1,4 +1,5 @@
-﻿using FG.Server.Api.Clients.User.Models;
+﻿using FG.Server.Api.Clients.Admin.Models.Responce;
+using FG.Server.Api.Clients.User.Models;
 using FG.Server.Api.Clients.User.Models.Request.HEUser;
 using FG.Server.Api.Clients.User.Models.Responce.HEUser;
 using Refit;
@@ -8,7 +9,7 @@ namespace FG.Server.Api.Clients.User.Controllers
 	public interface IHEUserController
 	{
 		[Put("/HE/User")]
-		public Task<HEUserResponce> EditUser(
+		public Task<UserResponce> EditUser(
 			[Body] EditHEUserOptions options);
 
 		[Get("/HE/User/Position")]
