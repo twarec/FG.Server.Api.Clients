@@ -6,9 +6,9 @@ namespace FG.Server.Api.Clients.Main.Controllers;
 
 public interface IUserController
 {
-    [Get("/User/Geo/Markers/Distance/Range")]
-    public Task<IEnumerable<Marker<UserMarkerValue>>> GetRangeFromDistanceAsync(GetUsersFromDistanceOptions options);
-    [Get("/User/Geo/Markers/Distance/Range")]
-    public Task<IEnumerable<Marker<UserMarkerValue>>> GetRangeFromBoundsAsync(GetUsersFromBoundsOptions options);
+	[Get("/User/Geo/Markers/Distance/Range")]
+	public Task<IEnumerable<Marker<UserMarkerValue>>> GetRangeFromDistanceAsync(GetUsersFromDistanceOptions options);
+	[Get("/User/Geo/Markers/Distance/Range")]
+	public Task<IEnumerable<Marker<UserMarkerValue>>> GetRangeFromBoundsAsync(GetUsersFromBoundsOptions options);
 
 }

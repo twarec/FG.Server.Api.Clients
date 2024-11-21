@@ -6,13 +6,13 @@ namespace FG.Server.Api.Clients.Storage.Controllers;
 
 public interface IConfigurateController
 {
-    [Get("/Configurate/{name}")]
-    public Task<string> GetAsync(string name);
-    [Get("/Configurate/{name}/Content")]
-    public Task<string> GetContentAsync(string name);
-    [Get("/Configurate/Range")]
-    public Task<IEnumerable<ConfigurateResponce>> GetRangeAsync([Query] int offset, [Query] int count);
-    [Put("/Configurate")]
-    public Task<ConfigurateResponce> CreateOrEditAsync([Body] PostConfigurateOptions options);
+	[Get("/Configurate/{name}")]
+	public Task<string> GetAsync(string name);
+	[Get("/Configurate/{name}/Content")]
+	public Task<string> GetContentAsync(string name);
+	[Get("/Configurate/Range")]
+	public Task<IEnumerable<ConfigurateResponce>> GetRangeAsync([Query] int offset, [Query] int count);
+	[Put("/Configurate")]
+	public Task<ConfigurateResponce> CreateOrEditAsync([Body] PostConfigurateOptions options);
 
 }
