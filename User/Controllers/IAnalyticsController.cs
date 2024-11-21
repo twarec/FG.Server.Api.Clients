@@ -1,4 +1,5 @@
 using Refit;
+using System.Numerics;
 
 namespace FG.Server.Api.Clients.User.Controllers
 {
@@ -21,8 +22,6 @@ namespace FG.Server.Api.Clients.User.Controllers
         [Get("/User/Analytics/User/Many/Check/Email")]
         public Task<List<string>> CheckAvalaibleManyUsersFromEmail(
             [Query] List<string> emails);
-
-
 
         //if list empty return all
         [Get("/User/Analytics/Tags")]
