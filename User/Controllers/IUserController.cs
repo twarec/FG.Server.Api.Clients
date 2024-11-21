@@ -32,6 +32,7 @@ public partial interface IUserController
 
 	[Put("/User")]
 	public Task<UserResponce> EditUser(
+		[Query] List<string> additionalModels,
 		[Body] EditUserOptions options);
 
 	[Put("/User/Password")]

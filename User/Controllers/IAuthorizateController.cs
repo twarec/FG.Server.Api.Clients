@@ -9,10 +9,12 @@ public interface IAuthorizateController
 	[Get("/User/Authorizate/Session")]
 	public Task<AuthorizateResponce> AuthorizateFromSession(
 		[Query] Guid userId,
-		[Query] Guid sessionId);
+		[Query] Guid sessionId,
+		[Query] List<string> additionalModels);
 
 	[Get("/User/Authorizate/Email")]
 	public Task<AuthorizateEmailResponce> AutorizateFromEmail(
+		[Query] List<string> additionalModels,
 		[Query] AuthorizationEmailOptions options);
 
 	[Get("/User/Authorizate/Email/Verification")]
@@ -21,6 +23,7 @@ public interface IAuthorizateController
 
 	[Put("/User/Authorizate/Email/Verification")]
 	public Task<AuthorizateEmailResponce> Verification(
+		[Query] List<string> additionalModels,
 		[Query] string email,
 		[Query] string code);
 

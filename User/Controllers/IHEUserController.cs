@@ -10,6 +10,7 @@ namespace FG.Server.Api.Clients.User.Controllers
 	{
 		[Put("/HE/User")]
 		public Task<UserResponce> EditUser(
+			[Query] List<string> additionalModels,
 			[Body] EditHEUserOptions options);
 
 		[Get("/HE/User/Position")]
