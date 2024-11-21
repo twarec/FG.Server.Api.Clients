@@ -4,6 +4,6 @@
     {
         public string StackName { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public Dictionary<string, string?> Proprties { get; set; } = [];
+        public Dictionary<string, string?> Properties { get; set; } = [];
     }
 }

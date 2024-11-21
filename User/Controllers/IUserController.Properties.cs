@@ -7,13 +7,13 @@ namespace FG.Server.Api.Clients.User.Controllers
 	public partial interface IUserController
 	{
 		[Get("/User/Properties")]
-		public Task<UserPropertyResponce> GetProperties(
-		[Body] UserPropertyOptions options);
+		public Task<List<UserPropertyResponce>> GetProperties(
+			[Query] UserPropertyOptions options);
 
 		[Get("/User/Properties/{userId}")]
-		public Task<UserPropertyResponce> GetPropeties(
+		public Task<List<UserPropertyResponce>> GetProperties(
 			Guid userId,
-			[Body] UserPropertyOptions options);
+			[Query] UserPropertyOptions options);
 
 		[Get("/User/Properties/Stacks")]
 		public Task<UserStackPropertyResponce> GetAllUserStacksProperties();
