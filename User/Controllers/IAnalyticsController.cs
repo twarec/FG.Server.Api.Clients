@@ -1,5 +1,4 @@
 using Refit;
-using System.Numerics;
 
 namespace FG.Server.Api.Clients.User.Controllers
 {
