@@ -18,6 +18,12 @@ namespace FG.Server.Organization.Api.Client.Controllers
         public Task<Models.Responce.Organization> CreateOrganization();
         [Put("/Organization/{id}/Info")]
         public Task<Models.Responce.Organization> UpdateOrganizationInform(Guid id, Models.Request.UpdateOrganizationInform updateOrganizationInform);
+        [Post("/Organization/{OrganizationId}/Images")]
+        public Task<Models.Responce.ImageInfo> AddImage(Guid OrganizationId, [Body] Models.Request.AddOrganizationImage addImage);
+        [Put("/Organization/Images/{ImageId}")]
+        public Task<Models.Responce.ImageInfo> UpdateImage(Guid ImageId, [Body] Models.Request.UpdateOrganizationImage updateImage);
+        [Delete("/Organization/{OrganizationId}/Image/Many")]
+        public Task DeleteImages(Guid OrganizationId, [Body] Models.Request.DeleteOrganizationImages deleteImages);
         [Post("/Organization/{OrganizationId}/Members")]
         public Task<Models.Responce.Organization> AddOrganizationMember(Guid OrganizationId, Guid rootId);
         [Delete("/Organization/{OrganizationId}/Members/{MemberId}")]
