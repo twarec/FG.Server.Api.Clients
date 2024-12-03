@@ -1,8 +1,10 @@
-namespace FG.Server.Api.Clients.Entities.Organization.Models.Request.Enums
+using System;
+
+namespace FG.Server.Organization.Api.Client.Models.Request.Enums
 {
-	public enum OperationCanExecute
-	{
-		CreateEvent,
-		UpdateEvent
-	}
+    public enum OperationCanExecute
+    {
+        CreateEvent,
+        UpdateEvent
+    }
 }

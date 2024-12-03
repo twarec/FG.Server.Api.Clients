@@ -1,18 +1,21 @@
-using FG.Server.Api.Clients.Entities.Organization.Controllers;
+using System;
+using FG.Server.Organization.Api.Client.Controllers;
 
-namespace FG.Server.Api.Clients.Entities.Organization.Runtime
+namespace FG.Server.Organization.Api.Client.Runtime
 {
-	public class FGServerOrganizationApiClient : IFGServerOrganizationApiClient
-	{
-		private static HttpClient? _client;
-		public IMembersController MembersController { get; }
-		public IOrganizationController OrganizationController { get; }
+    public class FGServerOrganizationApiClient : IFGServerOrganizationApiClient
+    {
+        private static HttpClient? _client;
+        public IAccountController AccountController { get; }
+        public IMembersController MembersController { get; }
+        public IOrganizationController OrganizationController { get; }
 
-		public FGServerOrganizationApiClient(HttpClient client)
-		{
-			_client = client;
-			MembersController = Refit.RestService.For<IMembersController>(_client);
-			OrganizationController = Refit.RestService.For<IOrganizationController>(_client);
-		}
-	}
+        public FGServerOrganizationApiClient(HttpClient client)
+        {
+            _client = client;
+            AccountController = Refit.RestService.For<IAccountController>(_client);
+            MembersController = Refit.RestService.For<IMembersController>(_client);
+            OrganizationController = Refit.RestService.For<IOrganizationController>(_client);
+        }
+    }
 }

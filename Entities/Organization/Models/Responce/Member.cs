@@ -1,11 +1,13 @@
-namespace FG.Server.Api.Clients.Entities.Organization.Models.Responce
+using System;
+
+namespace FG.Server.Organization.Api.Client.Models.Responce
 {
-	public class Member
-	{
-		public Guid Id { get; set; }
-		public Responce.Enums.MemberStatus MemberStatus { get; set; }
-		public Responce.Enums.MemberFlags MemberFlags { get; set; }
-		public Responce.MemberInform MemberInform { get; set; } = new Responce.MemberInform();
-		public ICollection<Responce.MemberTag> Tags { get; set; } = [];
-	}
+    public class Member
+    {
+        public Guid Id { get; set; }
+        public Models.Responce.Enums.MemberStatus MemberStatus { get; set; }
+        public Models.Responce.Enums.MemberFlags MemberFlags { get; set; }
+        public Models.Responce.MemberInform MemberInform { get; set; } = new Models.Responce.MemberInform();
+        public ICollection<Models.Responce.Tag> Tags { get; set; } = [];
+    }
 }
