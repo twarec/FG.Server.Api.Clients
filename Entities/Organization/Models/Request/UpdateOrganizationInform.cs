@@ -1,7 +1,9 @@
-namespace FG.Server.Api.Clients.Entities.Organization.Models.Request
+using System;
+
+namespace FG.Server.Organization.Api.Client.Models.Request
 {
-	public class UpdateOrganizationInform
-	{
-		public string Name { get; set; } = "";
-	}
+    public class UpdateOrganizationInform
+    {
+        public String Name { get; set; } =  "" ;
+    }
 }

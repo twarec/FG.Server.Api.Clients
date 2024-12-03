@@ -1,10 +1,12 @@
-using FG.Server.Api.Clients.Entities.Organization.Controllers;
+using System;
+using FG.Server.Organization.Api.Client.Controllers;
 
-namespace FG.Server.Api.Clients.Entities.Organization
+namespace FG.Server.Organization.Api.Client
 {
-	public interface IFGServerOrganizationApiClient
-	{
-		public IMembersController MembersController { get; }
-		public IOrganizationController OrganizationController { get; }
-	}
+    public interface IFGServerOrganizationApiClient
+    {
+        public IAccountController AccountController { get; }
+        public IMembersController MembersController { get; }
+        public IOrganizationController OrganizationController { get; }
+    }
 }

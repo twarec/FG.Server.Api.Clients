@@ -1,7 +1,9 @@
-namespace FG.Server.Api.Clients.Entities.Organization.Models.Responce.Enums
+using System;
+
+namespace FG.Server.Organization.Api.Client.Models.Responce.Enums
 {
-	public enum MemberFlags
-	{
-		Creator
-	}
+    public enum MemberFlags
+    {
+        Creator
+    }
 }
