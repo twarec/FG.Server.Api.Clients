@@ -2,9 +2,9 @@ using System;
 
 namespace FG.Server.Organization.Api.Client.Models.Request
 {
-    public class UpdateOrganizationInform
+    public class AddOrganizationImage
     {
         public String Name { get; set; } =  "" ;
-        public String Description { get; set; } =  "" ;
+        public String Data { get; set; } =  "" ;
     }
 }
