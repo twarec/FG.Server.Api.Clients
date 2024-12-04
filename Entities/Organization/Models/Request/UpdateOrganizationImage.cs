@@ -1,10 +1,10 @@
 using System;
 
-namespace FG.Server.Organization.Api.Client.Models.Request
+namespace FG.Server.Api.Clients.Entities.Organization.Models.Request
 {
     public class UpdateOrganizationImage
     {
-        public String Name { get; set; } =  "" ;
-        public String Data { get; set; } =  "" ;
+        public string Name { get; set; } = "";
+        public string Data { get; set; } = "";
     }
 }
