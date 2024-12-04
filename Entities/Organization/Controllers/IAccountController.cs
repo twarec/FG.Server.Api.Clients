@@ -1,10 +1,10 @@
 using Refit;
 
-namespace FG.Server.Organization.Api.Client.Controllers
+namespace FG.Server.Api.Clients.Entities.Organization.Controllers
 {
     public interface IAccountController
     {
         [Get("/Organization/Account/Token/{rootKey}")]
-        public Task<String> TokenAsync(String rootKey, [Query] String accessTokens);
+        public Task<string> TokenAsync(string rootKey, [Query] string accessTokens);
     }
 }
