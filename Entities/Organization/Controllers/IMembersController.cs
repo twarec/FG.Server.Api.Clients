@@ -1,18 +1,18 @@
 using Refit;
 
-namespace FG.Server.Organization.Api.Client.Controllers
+namespace FG.Server.Api.Clients.Entities.Organization.Controllers
 {
     public interface IMembersController
     {
         [Get("/Organization/Members/Range/Root/{RootId}")]
-        public Task<ICollection<Models.Responce.Member>> GetUserMembers(Guid RootId, [Query] Int32 offset, [Query] Int32 count);
+        public Task<ICollection<Models.Response.Member>> GetUserMembers(Guid RootId, [Query] int offset, [Query] int count);
         [Get("/Organization/Members/Range")]
-        public Task<ICollection<Models.Responce.Member>> GetUserMembers([Query] Int32 offset, [Query] Int32 count);
+        public Task<ICollection<Models.Response.Member>> GetUserMembers([Query] int offset, [Query] int count);
         [Put("/Organization/Members/{MemberId}/Info")]
-        public Task<Models.Responce.MemberInform> UpdateMemberInform(Guid MemberId, Models.Request.UpdateMemberInform updateMemberInform);
+        public Task<Models.Response.MemberInform> UpdateMemberInform(Guid MemberId, Models.Request.UpdateMemberInform updateMemberInform);
         [Put("/Organization/Members/{MemberId}/Flags")]
-        public Task<Models.Responce.Member> UpdateMemberFlags(Guid MemberId, Models.Responce.Enums.MemberFlags flag);
+        public Task<Models.Response.Member> UpdateMemberFlags(Guid MemberId, Models.Response.Enums.MemberFlags flag);
         [Put("/Organization/Members/{MemberId}/Tags")]
-        public Task<Models.Responce.MemberInform> UpdateMemberTags(Guid MemberId, Models.Request.UpdateMemberTags updateMemberTags);
+        public Task<Models.Response.MemberInform> UpdateMemberTags(Guid MemberId, Models.Request.UpdateMemberTags updateMemberTags);
     }
 }
