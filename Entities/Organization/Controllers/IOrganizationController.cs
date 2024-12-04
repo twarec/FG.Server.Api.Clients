@@ -18,7 +18,7 @@ namespace FG.Server.Api.Clients.Entities.Organization.Controllers
         [Post("/Organization/")]
         public Task<Models.Response.Organization> CreateOrganization();
         [Put("/Organization/{id}/Info")]
-        public Task<Models.Response.Organization> UpdateOrganizationInform(Guid id, Models.Request.UpdateOrganizationInform updateOrganizationInform);
+        public Task<Models.Response.OrganizationInform> UpdateOrganizationInform(Guid id, Models.Request.UpdateOrganizationInform updateOrganizationInform);
         [Post("/Organization/{OrganizationId}/Images")]
         public Task<Models.Response.ImageInfo> AddImage(Guid OrganizationId, [Body] AddOrganizationImage addImage);
         [Put("/Organization/Images/{ImageId}")]
@@ -26,8 +26,8 @@ namespace FG.Server.Api.Clients.Entities.Organization.Controllers
         [Delete("/Organization/{OrganizationId}/Image/Many")]
         public Task DeleteImages(Guid OrganizationId, [Body] Models.Request.DeleteOrganizationImages deleteImages);
         [Post("/Organization/{OrganizationId}/Members")]
-        public Task<Models.Response.Organization> AddOrganizationMember(Guid OrganizationId, Guid rootId);
+        public Task<Models.Response.Member> AddOrganizationMember(Guid OrganizationId, Guid rootId);
         [Delete("/Organization/{OrganizationId}/Members/{MemberId}")]
-        public Task<Models.Response.Organization> RemoveOrganizationMember(Guid OrganizationId, Guid MemberId);
+        public Task RemoveOrganizationMember(Guid OrganizationId, Guid MemberId);
     }
 }
