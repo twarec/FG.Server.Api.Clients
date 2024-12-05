@@ -27,6 +27,8 @@ namespace FG.Server.Api.Clients.Entities.Organization.Controllers
         public Task<Models.Response.ImageInfo> UpdateImage(Guid ImageId, [Body] Models.Request.UpdateOrganizationImage updateImage);
         [Delete("/Organization/{OrganizationId}/Image/Many")]
         public Task DeleteImages(Guid OrganizationId, [Body] Models.Request.DeleteOrganizationImages deleteImages);
+        [Put("/Organization/{OrganizationId}/Status")]
+        public Task UpdateStatus(Guid OrganizationId, [Query] Models.Response.Enums.OrganizationStatus status);
         [Post("/Organization/{OrganizationId}/Members")]
         public Task<Models.Response.Member> AddOrganizationMember(Guid OrganizationId, Guid rootId);
         [Delete("/Organization/{OrganizationId}/Members/{MemberId}")]
