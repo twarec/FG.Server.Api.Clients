@@ -1,6 +1,6 @@
 using System;
 
-namespace FG.Server.Api.Clients.Entities.Models.Response
+namespace FG.Server.Api.Clients.Entities.Organization.Models.Response
 {
     public class Member
     {
