@@ -1,7 +1,7 @@
 using System;
-using FG.Server.Organization.Api.Client.Controllers;
+using FG.Server.Api.Clients.Entities.Organization.Controllers;
 
-namespace FG.Server.Organization.Api.Client
+namespace FG.Server.Api.Clients.Entities.Organization
 {
     public interface IFGServerOrganizationApiClient
     {
