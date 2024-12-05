@@ -1,3 +1,4 @@
+using FG.Server.Api.Clients.Entities.Organization.Models.Request;
 using Refit;
 
 namespace FG.Server.Api.Clients.Entities.Organization.Controllers
@@ -21,11 +22,13 @@ namespace FG.Server.Api.Clients.Entities.Organization.Controllers
         [Put("/Organization/{OrganizationId}/Logo")]
         public Task<Models.Response.ImageInfo> UpdateLogo(Guid OrganizationId, [Body] Models.Request.UpdateOrganizationLogo updateLogo);
         [Post("/Organization/{OrganizationId}/Images")]
-        public Task<Models.Response.ImageInfo> AddImage(Guid OrganizationId, [Body] Models.Request.AddOrganizationImage addImage);
+        public Task<Models.Response.ImageInfo> AddImage(Guid OrganizationId, [Body] AddOrganizationImage addImage);
         [Put("/Organization/Images/{ImageId}")]
         public Task<Models.Response.ImageInfo> UpdateImage(Guid ImageId, [Body] Models.Request.UpdateOrganizationImage updateImage);
         [Delete("/Organization/{OrganizationId}/Image/Many")]
         public Task DeleteImages(Guid OrganizationId, [Body] Models.Request.DeleteOrganizationImages deleteImages);
+        [Put("/Organization/{OrganizationId}/Status")]
+        public Task UpdateStatus(Guid OrganizationId, [Query] Models.Response.Enums.OrganizationStatus status);
         [Post("/Organization/{OrganizationId}/Members")]
         public Task<Models.Response.Member> AddOrganizationMember(Guid OrganizationId, Guid rootId);
         [Delete("/Organization/{OrganizationId}/Members/{MemberId}")]
