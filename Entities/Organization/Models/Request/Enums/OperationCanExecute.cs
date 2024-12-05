@@ -1,6 +1,6 @@
 using System;
 
-namespace FG.Server.Api.Clients.Entities.Organization.Models.Request.Enums
+namespace FG.Server.Api.Clients.Entities.Models.Request.Enums
 {
     public enum OperationCanExecute
     {

@@ -1,7 +1,6 @@
-using FG.Server.Api.Clients.Entities.Organization.Models.Request;
 using Refit;
 
-namespace FG.Server.Api.Clients.Entities.Organization.Controllers
+namespace FG.Server.Api.Clients.Entities.Controllers
 {
     public interface IOrganizationController
     {
@@ -19,8 +18,10 @@ namespace FG.Server.Api.Clients.Entities.Organization.Controllers
         public Task<Models.Response.Organization> CreateOrganization();
         [Put("/Organization/{id}/Info")]
         public Task<Models.Response.OrganizationInform> UpdateOrganizationInform(Guid id, Models.Request.UpdateOrganizationInform updateOrganizationInform);
+        [Put("/Organization/{OrganizationId}/Logo")]
+        public Task<Models.Response.ImageInfo> UpdateLogo(Guid OrganizationId, [Body] Models.Request.UpdateOrganizationLogo updateLogo);
         [Post("/Organization/{OrganizationId}/Images")]
-        public Task<Models.Response.ImageInfo> AddImage(Guid OrganizationId, [Body] AddOrganizationImage addImage);
+        public Task<Models.Response.ImageInfo> AddImage(Guid OrganizationId, [Body] Models.Request.AddOrganizationImage addImage);
         [Put("/Organization/Images/{ImageId}")]
         public Task<Models.Response.ImageInfo> UpdateImage(Guid ImageId, [Body] Models.Request.UpdateOrganizationImage updateImage);
         [Delete("/Organization/{OrganizationId}/Image/Many")]
