@@ -1,6 +1,6 @@
 using Refit;
 
-namespace FG.Server.Api.Clients.Entities.Controllers
+namespace FG.Server.Api.Clients.Entities.Event.Controllers
 {
     public interface IBookingController
     {

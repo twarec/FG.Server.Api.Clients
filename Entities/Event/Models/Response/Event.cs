@@ -1,6 +1,6 @@
 using System;
 
-namespace FG.Server.Api.Clients.Entities.Models.Response
+namespace FG.Server.Api.Clients.Entities.Event.Models.Response
 {
     public class Event
     {

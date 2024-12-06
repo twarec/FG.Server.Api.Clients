@@ -1,8 +1,8 @@
 using System;
-using FG.Server.Api.Clients.Entities;
-using FG.Server.Api.Clients.Entities.Controllers;
+using FG.Server.Api.Clients.Entities.Event;
+using FG.Server.Api.Clients.Entities.Event.Controllers;
 
-namespace FG.Server.Api.Clients.Entities.Runtime
+namespace FG.Server.Api.Clients.Entities.Event.Runtime
 {
     public class FGServerEventApiClient : IFGServerEventApiClient
     {
