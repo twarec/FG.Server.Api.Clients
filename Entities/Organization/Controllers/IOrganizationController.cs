@@ -5,9 +5,9 @@ namespace FG.Server.Api.Clients.Entities.Organization.Controllers
     public interface IOrganizationController
     {
         [Get("/Organization/{OrganizationId}/Roots/{RootId}/CanExecute")]
-        public Task<Guid> CheckRootOrganization(Guid OrganizationId, Guid RootId, Models.Request.Enums.OperationCanExecute operationCanExecute);
+        public Task<Models.Response.Member> CheckRootOrganization(Guid OrganizationId, Guid RootId, Models.Request.Enums.OperationCanExecute operationCanExecute);
         [Get("/Organization/{OrganizationId}/CanExecute")]
-        public Task<Guid> CheckRootOrganization(Guid OrganizationId, Models.Request.Enums.OperationCanExecute operationCanExecute);
+        public Task<Models.Response.Member> CheckRootOrganization(Guid OrganizationId, Models.Request.Enums.OperationCanExecute operationCanExecute);
         [Get("/Organization/{id}")]
         public Task<Models.Response.Organization> GetOrganization(Guid id);
         [Get("/Organization/Range/Roots/{RootId}")]
