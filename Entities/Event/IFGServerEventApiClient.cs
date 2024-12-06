@@ -1,11 +1,12 @@
-using FG.Server.Api.Clients.Entities.Event.Controllers;
+using System;
+using FG.Server.Api.Clients.Entities.Controllers;
 
-namespace FG.Server.Api.Clients.Entities.Event
+namespace FG.Server.Api.Clients.Entities
 {
-	public interface IFGServerEventApiClient
-	{
-		public IBookingController BookingController { get; }
-		public IEventController EventController { get; }
-		public IMemberController MemberController { get; }
-	}
+    public interface IFGServerEventApiClient
+    {
+        public IBookingController BookingController { get; }
+        public IEventController EventController { get; }
+        public IMemberController MemberController { get; }
+    }
 }
