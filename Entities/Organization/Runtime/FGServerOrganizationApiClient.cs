@@ -1,4 +1,5 @@
 using System;
+using FG.Server.Api.Clients.Entities.Organization;
 using FG.Server.Api.Clients.Entities.Organization.Controllers;
 
 namespace FG.Server.Api.Clients.Entities.Organization.Runtime
@@ -9,6 +10,7 @@ namespace FG.Server.Api.Clients.Entities.Organization.Runtime
         public IAccountController AccountController { get; }
         public IMembersController MembersController { get; }
         public IOrganizationController OrganizationController { get; }
+        public IRootsController RootsController { get; }
 
         public FGServerOrganizationApiClient(HttpClient client)
         {
@@ -16,6 +18,7 @@ namespace FG.Server.Api.Clients.Entities.Organization.Runtime
             AccountController = Refit.RestService.For<IAccountController>(_client);
             MembersController = Refit.RestService.For<IMembersController>(_client);
             OrganizationController = Refit.RestService.For<IOrganizationController>(_client);
+            RootsController = Refit.RestService.For<IRootsController>(_client);
         }
     }
 }
