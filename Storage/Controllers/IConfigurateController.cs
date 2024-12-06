@@ -9,7 +9,7 @@ public interface IConfigurateController
 	[Get("/Configurate/{name}")]
 	public Task<string> GetAsync(string name);
 	[Get("/Configurate/{name}/Content")]
-	public Task<string> GetContentAsync(string name);
+	public Task<string> GetContentAsync(string name, [Query] Dictionary<string, string> metadata);
 	[Get("/Configurate/Range")]
 	public Task<IEnumerable<ConfigurateResponce>> GetRangeAsync([Query] int offset, [Query] int count);
 	[Put("/Configurate")]
