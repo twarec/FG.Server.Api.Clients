@@ -8,5 +8,6 @@ namespace FG.Server.Api.Clients.Entities.Organization
         public IAccountController AccountController { get; }
         public IMembersController MembersController { get; }
         public IOrganizationController OrganizationController { get; }
+        public IRootsController RootsController { get; }
     }
 }
